@@ -26,6 +26,7 @@
 	height: 90px; 
 	width: 100px; 
 	margin-left:10px;
+	margin-top:5px;
 }
 
 .container{
@@ -34,21 +35,52 @@
 
 .left{
 	width:20%;
-	border:2px solid black;
-	height: 650px;
 	
+	height: 650px;
+	font-size: 24px;
 }
 
 .right{
 	width:80%;
-	border:2px solid black;
+	
 	height: 550px;
 }
 
+.container1{
+	display:flex;
+}
+
 .inner-left{
+	width:30%;
+	height:475px;
 	
 }
 
 .inner-right{
+	width: 70%;
+	height:475px;
 	
+}
+
+a {
+	margin-top: 20px;
+}
+
+h3{
+	font-size:24px;
+	font-weight:bolder;
+}
+
+#badminton{
+	height:470px;
+	width: 371px;
+}
+p{
+	font-size:18px;
+}
+.right-bottom{
+	background-color:#7EBAF0;
+	padding:10px;
+	float:right;
+	margin-top: 65px;
 }
