@@ -4,7 +4,7 @@
 
 .head{
 	display:flex;
-	background-color: #D2F07E;
+	background-color: #F7B6BD;
 	
 }
 
@@ -35,14 +35,14 @@
 
 .left{
 	width:20%;
-	
+	background-color: #F7D1D5;
 	height: 650px;
 	font-size: 24px;
 }
 
 .right{
 	width:80%;
-	
+	background-color:#F7DDE0;
 	height: 550px;
 }
 
