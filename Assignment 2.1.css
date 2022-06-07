@@ -1,0 +1,29 @@
+*{
+	box-sizing: border-box ;
+}
+
+header{
+	display:flex;
+	background-color: #D2F07E;
+	
+}
+
+#logo{
+	height: 90px; 
+	width: 100px; 
+	margin-left: 5px; 
+	margin-top: 5px;
+	margin-bottom:5px;
+	
+}
+
+#username{
+	margin-left:70%;
+	margin-top: 50px;
+}
+
+#profile{
+	height: 90px; 
+	width: 100px; 
+	margin-left:10px;
+}
