@@ -2,7 +2,7 @@
 	box-sizing: border-box ;
 }
 
-header{
+.head{
 	display:flex;
 	background-color: #D2F07E;
 	
@@ -26,4 +26,29 @@ header{
 	height: 90px; 
 	width: 100px; 
 	margin-left:10px;
+}
+
+.container{
+	display:flex;
+}
+
+.left{
+	width:20%;
+	border:2px solid black;
+	height: 650px;
+	
+}
+
+.right{
+	width:80%;
+	border:2px solid black;
+	height: 550px;
+}
+
+.inner-left{
+	
+}
+
+.inner-right{
+	
 }
