@@ -1,3 +1,8 @@
+body{
+	margin:0;
+	padding: 0;
+}
+
 .head{
 	display:flex;
 	background-color: #F7B6BD;
@@ -35,11 +40,12 @@ header{
 }
 
 .container1,.container2,.container3{
-	border: 1px solid green;
+	border: 2px solid green;
 	height:350px;
 	width:250px;
 	margin-top:20px;
 	margin-left:200px;
+	text-align: center;
 	justify-content: space-evenly;
 }
 
@@ -152,13 +158,13 @@ p{
 }
 
 .topic{
-	border: 2px solid black;
 	margin-top: 20px;
 }
 
 #address{
 	color:green;
 	font-size:18px;
+	font-weight: bold;
 }
 
 .socialmedia-logo{
