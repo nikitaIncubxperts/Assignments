@@ -128,21 +128,32 @@ p{
 	
 }
 
-.footer{
+.foot{
 	display:flex;
+	justify-content:space-between;
+}
+
+.footer-left{
+	display:flex;
+	text-align:center;
 }
 
 .SocialMedia{
-	margin-left: 400px;
+	margin-left: 200px;
 	font-size:24px;
 	margin-top:10px;
 }
 
 .container4{
-	
 	height: 130px;
 	width: 350px;
-	margin-left: 278px;
+	margin: 10px 65px;
+	
+}
+
+.topic{
+	border: 2px solid black;
+	margin-top: 20px;
 }
 
 #address{
