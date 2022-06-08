@@ -1,0 +1,27 @@
+body{
+	margin:0;
+	padding:0;
+}
+
+.back{
+	border: 2px solid black;
+	height: 500px;
+	display: flex;
+}
+
+.inner-left{
+	border: 2px solid black;
+	width: 50%;
+	height: 500px;
+	
+}
+
+.inner-right{
+	border: 2px solid black;
+	width: 50%;
+	height: 500px;
+}
+
+.card{
+	display: flex;
+}
