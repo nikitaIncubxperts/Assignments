@@ -98,6 +98,62 @@ body{
 	margin-top:50px;
 	margin-left:-15px;
 }
-.btns{
+.lists{
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: 15px;
+	height: 30px; 
+	margin-top:15px;
+}
+#type,#classification,#progress,#notice,#category,#status,#recall{
+	margin-left: 20px;
+	border: 2px solid blue;
+	color:blue;
+}
+#clear{
+	margin-left: 20px;
+	color:blue;
+	border:0;
+	background-color:white;
 	
+}
+#sort{
+	margin-left: 300px;
+	color:blue;
+	border:0;
+}
+.card{
+	display:flex;
+	
+}
+.container1,.container2,.container3{
+	border: 2px solid black;
+	height:400px;
+	width:250px;
+	margin-top:20px;
+	margin-left:50px;
+	text-align: center;
+	justify-content: space-evenly;
+}
+.card1.1{
+	border: 2px solid black;
+	height:40px;
+}
+.card1.2{
+	border: 2px solid black;
+	height:100px;
+	margin-top:15px;
+}
+.card1.3{
+	border: 2px solid black;
+	height:20px;
+	margin-top:60px;
+}
+.card1.4{
+	border: 2px solid black;
+	height:20px;
+	margin-top:80px;
+}
+#ack{
+	margin-left:25px;
 }
