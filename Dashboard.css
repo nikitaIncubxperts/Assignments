@@ -53,6 +53,7 @@ body{
 .inner-upper{
 	display:flex;
 	background-color:#DDE0E3;
+	border-bottom: 2px solid black;
 }
 .head-left{		
 	width:150%;
