@@ -38,36 +38,34 @@ body{
 .container-main{
 	display:flex;
 }
+.dashboard{
+	margin-top:80px;
+}
 .left{
-	border:2px solid black;
+	background-color:#D0E3F2;
 	width:20%;
 	height: 650px;
 }
 .right{
-	border:2px solid black;
+	background-color:#EEF3F7;
 	width:80%;
 	height: 650px;
 }
-#dashboard{
-	margin-top: 20%;
-}
 .inner-upper{
-	border:2px solid black;
 	display:flex;
+	background-color:#DDE0E3;
 }
-.head-left{
-	border:2px solid black;
+.head-left{		
 	width:150%;
 	height: 100%;
 }
 .head-right{
-	border:2px solid black;
+		
 	margin-left: 150px;
 	width:80%;
 	display:flex;
 }
 .inner-lower{
-	border:2px solid black;
 	width:100%;
 	height:80%;
 }
@@ -149,6 +147,7 @@ body{
 	border: 2px solid black;
 	height:60px;
 	text-align:left;
+	background-color:#DDE0E3;
 }
 .card14{
 	border: 2px solid black;
@@ -179,7 +178,6 @@ p{
 	display:flex;
 }
 #progress1{
-	border:1px solid blue;
 	height: 90px; 
 	width: 90px; 
 	margin-left:20px;
@@ -192,9 +190,13 @@ p{
 	width: 90px; 
 	border-radius: 15px;
 }
-#waiting{
-	height:30px;
-	width:30px;
-	margin-left:20px;
-	margin-top:20px;
+.view-btn{
+	background-color:#2B9CF5;
+	padding:1px;
+	width: 90%;
+	color:white;
+	font-size:24px;
+	border-radius: 12px;
+	margin-left:15px;
+	border:0;
 }
