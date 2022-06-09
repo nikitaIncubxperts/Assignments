@@ -1,0 +1,37 @@
+body{
+	margin:0;
+	padding:0;
+}
+.container{
+	display:flex;
+}
+.left{
+	border:2px solid black;
+	width:30%;
+	height:700px;
+}
+.right{
+	width:70%;
+	border:2px solid black;
+	height:700px;
+}
+#logo1{
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:40%;
+}
+#logo2{
+	height: 70px; 
+	width: 70px; 
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+}
+#powered{
+	text-align:center;
+	margin-top:200px;	
+}
+#heading{
+	text-align:center;
+}
