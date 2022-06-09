@@ -4,7 +4,7 @@ body{
 }
 .head{
 	display:flex;
-	background-color: #F7B6BD;
+	background-color: #5AB2F7;
 	font-size:22px;
 	
 }
@@ -26,7 +26,7 @@ body{
 	height: 40px; 
 	width: 40px; 
 	margin-left: 3%; 
-	margin-top: 30px;
+	margin-top: 60px;
 	margin-bottom:5px;
 }
 #product{
@@ -42,7 +42,7 @@ body{
 	margin-top:80px;
 }
 .left{
-	background-color:#D0E3F2;
+	background-color:#90C8F2;
 	width:20%;
 	height: 650px;
 }
@@ -59,8 +59,7 @@ body{
 	width:150%;
 	height: 100%;
 }
-.head-right{
-		
+.head-right{		
 	margin-left: 150px;
 	width:80%;
 	display:flex;
@@ -73,10 +72,11 @@ body{
 	margin-left: 15px;
 }
 #btn1,#btn2,#btn3{
-	margin-top: 10px;
-	background-color:#F2715A;
-	padding:10px;
-	width: 150px;
+	margin-top: 5px;
+	background-color:#51595F;
+	padding:8px;
+	border:0;
+	width: 130px;
 	color:white;
 	font-size:18px;	
 	margin-left:15px;
@@ -112,8 +112,7 @@ body{
 	margin-left: 20px;
 	color:blue;
 	border:0;
-	background-color:white;
-	
+	background-color:white;	
 }
 #sort{
 	margin-left: 300px;
@@ -121,36 +120,32 @@ body{
 	border:0;
 }
 .card{
-	display:flex;
-	
+	display:flex;	
 }
 .container1,.container2,.container3{
-	border: 2px solid black;
-	height:400px;
+	border: 2px solid #67B8F5;
+	height:420px;
 	width:250px;
 	margin-top:20px;
 	margin-left:50px;
 	text-align: center;
+	border-radius: 12px;
 	justify-content: space-evenly;
 }
-.card11{
-	border: 2px solid black;
+.card11{	
 	height:40px;
 	background-color:#DDE0E3;
 }
-.card12{
-	border: 2px solid black;
+.card12{	
 	height:200px;
 	text-align:left;
 }
-.card13{
-	border: 2px solid black;
+.card13{	
 	height:60px;
 	text-align:left;
 	background-color:#DDE0E3;
 }
 .card14{
-	border: 2px solid black;
 	height:85px;
 	text-align:left;
 }
