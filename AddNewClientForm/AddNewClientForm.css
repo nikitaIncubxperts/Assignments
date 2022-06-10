@@ -83,3 +83,46 @@ body{
 span{
 	color:red;
 }
+.client-info1,.client-info2{
+	display:flex;
+}
+.business{
+	margin-left:20px;
+}
+#name-in{
+	height:40px;
+	width:450px;
+	background-color:#D7D8D4;
+	border-radius:12px;
+	font-family:fontawesome;
+	font-size:18px;	
+	border:0;
+}
+#business-in{
+	height:40px;
+	width:450px;
+	background-color:#D7D8D4;
+	border-radius:12px;
+	font-family:fontawesome;
+	font-size:18px;	
+	border:0;
+}
+#client-id{
+	height:40px;
+	width:300px;
+	background-color:#D7D8D4;
+	border-radius:12px;
+	font-family:fontawesome;
+	font-size:18px;	
+	border:0;
+}
+#fein,#client-type{
+	height:40px;
+	width:300px;
+	margin-left:10px;
+	background-color:#D7D8D4;
+	border-radius:12px;
+	font-family:fontawesome;
+	font-size:18px;	
+	border:0;
+}
