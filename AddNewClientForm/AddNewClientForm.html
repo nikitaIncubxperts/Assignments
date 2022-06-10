@@ -7,21 +7,25 @@
 	</head>
 	<body>
 		<header class="head">
-			<img id="logo1" src="incubxperts_logo.png"></img>
-			<input type="button" class="accounts" value="Accounts">
-			<input type="button" class="clients" value="Clients">
-			<input type="button" class="documents" value="Documents">
-			<input type="button" class="reports" value="Reports">
-			<select name="accounting" id="accounting">
-				<option value="accounting">Accounting</option>
-			</select>
-			<select name="definition" id="definition">
-				<option value="definition">Definition</option>
-			</select>
-			<i id="add" class="fa-solid fa-circle-plus"></i>
-			<i id="help" class="fa-solid fa-circle-question"></i>
-			<img id="icon" src="ix1.jpg"></img>
-			<i id="drop-down" class="fa-solid fa-caret-down"></i>
+			<div class="head-left">
+				<img id="logo1" src="incubxperts_logo.png"></img>
+				<input type="button" class="accounts" value="Accounts">
+				<input type="button" class="clients" value="Clients">
+				<input type="button" class="documents" value="Documents">
+				<input type="button" class="reports" value="Reports">
+				<select name="accounting" id="accounting">
+					<option value="accounting">Accounting</option>
+				</select>
+				<select name="definition" id="definition">
+					<option value="definition">Definition</option>
+				</select>
+			</div>
+			<div class="head-right">
+				<i id="add" class="fa-solid fa-circle-plus"></i>
+				<i id="help" class="fa-solid fa-circle-question"></i>
+				<img id="icon" src="ix1.jpg"></img>
+				<i id="drop-down" class="fa-solid fa-caret-down"></i>
+			</div>
 		</header>
 		<div class="mid">
 			<p id="newclnt"><a href="#">Clients</a>/Add New Client</p>
@@ -52,7 +56,18 @@
 					<label for="auto">Filling and Judgement Automation</label><br><br>
 			</div>
 			<div class="right">
-				
+				<div class="inner-division">
+					<h2>Client Information</h2>
+					<p>indicate if the client is a business or indivisual</p>
+					<input type="radio" id="business" name="person" value="business">
+					<label for="business">Business</label>
+					<input type="radio" id="indivisual" name="person" value="indivisual">
+					<label for="indivisual">Indivisual</label>
+					<hr>
+					<p class="heading">Enter the client's name.</p>
+					<label>Client Name<span>*<span></label><br>
+					<input id="name-in" type="text">
+				</div>
 			</div>
 		</div>
 	</body>

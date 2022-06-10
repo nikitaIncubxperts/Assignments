@@ -10,33 +10,34 @@ body{
 	margin-bottom:3px;
 }
 .head{
+	justify-content:space-between;
 	display: flex;
 	background-color:#033B6B;
+}
+.head-right{
+	margin-right:25px;
+	margin-top:20px;
+	display:flex;
 }
 .accounts,.clients,.documents,.reports,#accounting,#definition{
 	margin-left: 15px; 
 	height:35px;
 	width:100px;
-	margin-top:10px;
 	background-color:transparent;
 	color:white;
 	font-weight:bold;
 	border:0;
 }
 #add{
-	margin-top:20px;
-	margin-left:40%;
+	margin-top:20px;	
 	font-family:fontawesome;
 	color:white;
 }
-#help,#brand,#drop-down{
+#help,#drop-down{
 	margin-top:20px;
 	margin-left:15px;
 	font-family:fontawesome;
 	color:white;
-}
-#brand{
-	size:20px;
 }
 #icon{
 	margin-left:15px;
@@ -56,6 +57,7 @@ body{
 }
 .left{
 	border:2px solid black;
+	height:100vh;
 	width:30%;
 }
 .right{
@@ -65,4 +67,19 @@ body{
 #style-radio{
 	margin-left:15%;
 	font-size:20px;
+}
+.inner-division{
+	border:2px solid black;
+	margin-left:50px;
+	margin-right:50px;
+}
+#indivisual{
+	margin-left:30px;
+}
+.heading{
+	margin-top:20px;
+	font-weight:bold;
+}
+span{
+	color:red;
 }
