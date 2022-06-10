@@ -1,0 +1,64 @@
+body{
+	margin:0;
+	padding:0;
+}
+#logo1{
+	height: 50px; 
+	width: 50px; 
+	margin-left: 10px; 
+	margin-top: 5px;
+	margin-bottom:3px;
+}
+.head{
+	display: flex;
+	background-color:#033B6B;
+}
+.accounts,.clients,.documents,.reports,#accounting,#definition{
+	margin-left: 15px; 
+	height:35px;
+	width:100px;
+	margin-top:10px;
+	background-color:transparent;
+	color:white;
+	font-weight:bold;
+	border:0;
+}
+#add{
+	margin-top:20px;
+	margin-left:40%;
+	font-family:fontawesome;
+	color:white;
+}
+#help,#brand,#drop-down{
+	margin-top:20px;
+	margin-left:15px;
+	font-family:fontawesome;
+	color:white;
+}
+#brand{
+	size:20px;
+}
+#icon{
+	margin-left:15px;
+	margin-top:10px;
+	border-radius:50%;
+	height:40px;
+	width:40px;
+}
+#newclnt{
+	margin-left:15px;
+}
+#progress{
+	width:100%;
+}
+.container{
+	display:flex;
+}
+.left{
+	border:2px solid black;
+	width:30%;
+}
+.right{
+	border:2px solid black;
+	width:70%;
+}
