@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="AddNewClientForm.css">
+    </link>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/fontawesome.min.css">
+</head>
+
+<body>
+    <header class="head">
+        <div class="head-left">
+            <img id="logo1" src="incubxperts_logo.png"></img>
+            <input type="button" class="accounts" value="Accounts">
+            <input type="button" class="clients" value="Clients">
+            <input type="button" class="documents" value="Documents">
+            <input type="button" class="reports" value="Reports">
+            <select name="accounting" id="accounting">
+                <option value="accounting">Accounting</option>
+            </select>
+            <select name="definition" id="definition">
+                <option value="definition">Definition</option>
+            </select>
+        </div>
+        <div class="head-right">
+            <i id="add" class="fa-solid fa-circle-plus"></i>
+            <i id="help" class="fa-solid fa-circle-question"></i>
+            <img id="icon" src="ix1.jpg"></img>
+            <i id="drop-down" class="fa-solid fa-caret-down"></i>
+        </div>
+    </header>
+    <div class="mid">
+        <p id="newclnt"><a href="#">Clients</a>/Add New Client</p>
+        <h3 id="newclnt">Add New Client - vbng</h3>
+        <progress id="progress" value="10" max="100"></progress>
+    </div>
+    <div class="container">
+        <div class="left">
+            <p id="style-radio">Contact</p>
+              <input type="radio" id="style-radio" name="1" value="client-information">
+              <label for="client-information">Client Information</label><br>
+              <input type="radio" id="style-radio" name="1" value="CSS">
+              <label for="css">Main Point of Contact</label><br>
+            <p id="style-radio">Settings</p>
+            <input type="radio" id="style-radio" name="1" value="30">
+            <label for="acc-cg">Accounting Configuration</label><br><br>
+            <input type="radio" id="style-radio" name="1" value="bank-ac">
+            <label for="bank-ac">Bank Accounts</label><br><br>
+            <input type="radio" id="style-radio" name="1" value="cost">
+            <label for="cost">Costs & Fees</label><br><br>
+            <input type="radio" id="style-radio" name="1" value="cost">
+            <label for="cost">Costs & Fees</label><br><br>
+            <input type="radio" id="style-radio" name="1" value="invoice">
+            <label for="invoice">Invoices</label><br><br>
+            <input type="radio" id="style-radio" name="1" value="pif">
+            <label for="pif">PIF Options</label><br><br>
+            <input type="radio" id="style-radio" name="1" value="auto">
+            <label for="auto">Filling and Judgement Automation</label><br><br>
+        </div>
+        <div class="right">
+            <div class="inner-division">
+                <h2>Client Information</h2>
+                <p>indicate if the client is a business or indivisual</p>
+                <input type="radio" id="business" name="person" value="business">
+                <label for="business">Business</label>
+                <input type="radio" id="indivisual" name="person" value="indivisual">
+                <label for="indivisual">Indivisual</label>
+                <hr>
+                <p class="heading">Enter the client's name.</p>
+                <div class="client-info1">
+                    <div class="name">
+                        <label>Client Name<span>*<span></label><br>
+                        <input id="name-in" placeholder="Enter client name" type="text">
+                    </div>
+                    <div class="business">
+                        <label>Doing Business As</label><br>
+                        <input id="business-in" placeholder="Enter DBA or fictitious name" type="text">
+                    </div>
+                </div>
+                <hr>
+                <p class="heading">Create a client ID, enter their FEIN,and select client type.</p>
+                <div class="client-info2">
+                    <div class="client-id">
+                        <label>Client ID(Limit of 10 characters)<span>*<span></label><br>
+                        <input id="client-id" placeholder="Enter client ID" type="text">
+                    </div>
+                    <div class="fein">
+                        <label>FEIN</label><br>
+                        <input id="fein" placeholder="Enter FEIN &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&#xf070;"
+                            type="text">
+                    </div>
+                    <div class="client-type">
+                        <label>Client Type<span>*<span></label><br>
+                        <select name="type" id="client-type">
+                            <option value="client-set-code">Select client type</option>
+                        </select>
+                    </div>
+                </div>
+                <hr>
+                <p class="heading">Assign to 1 or more sets. Use sets to group like clients together and pull reports
+                    for all clients in that set.(optional)</p>
+                <div class="client-info3">
+                    <div class="client-set-code">
+                        <label>Client Set Code</label><br>
+                        <select name="type" id="code">
+                            <option value="client-set-code">Select client set code</option>
+                        </select>
+                    </div>
+                    <div class="manage-codes">
+                        <input type="button" id="manage-codes" value="&nbsp;&#xf013;&nbsp;Manage Codes">
+                    </div>
+                </div>
+                <hr>
+                <p class="heading">Enter Address(optional). More addresses can be saved as additional contacts</p>
+                <div class="client-info4">
+                    <div class="attention">
+                        <label>Attention</label><br>
+                        <input id="attention" placeholder="Enter address" type="text">
+                    </div><br>
+                    <div class="street-addr1">
+                        <label>Street Address</label><br>
+                        <input id="street-addr1" placeholder="Enter street address" type="text">
+                    </div><br>
+                    <div class="street-addr2">
+                        <label>Street Address</label><br>
+                        <input id="street-addr2" placeholder="Enter apartment,suit,unit,floor,building,etc."
+                            type="text">
+                    </div><br>
+                </div>
+                <div class="client-info5">
+                    <div class="name">
+                        <label>Zip Code/Postal Code<span>*<span></label><br>
+                        <input id="name-in" placeholder="00000" type="text">
+                    </div><br>
+                    <div class="business">
+                        <label>City</label><br>
+                        <input id="business-in" placeholder="Enter city" type="text">
+                    </div>
+                </div><br>
+                <div class="client-info5">
+                    <div class="name">
+                        <label>State/Province<span>*<span></label><br>
+                        <input id="name-in" placeholder="Enter state/province" type="text">
+                    </div>
+                    <div class="business">
+                        <label>Country</label><br>
+                        <select name="type" id="business-in">
+                            <option value="country">Select country</option>
+                        </select>
+                    </div>
+                </div><br>
+                <div class="client-info3">
+                    <div class="client-set-code">
+                        <label>Country Code</label><br>
+                        <select name="type" id="code">
+                            <option value="client-set-code">Select country code</option>
+                        </select>
+                    </div>
+                    <div class="manage-codes">
+                        <input type="button" id="manage-codes" value="&nbsp;&#xf013;&nbsp;Manage Codes">
+                    </div>
+                </div><br>
+                <div class="time-zone">
+                    <label>Time Zone</label><br>
+                    <select name="type" id="time-zone">
+                        <option value="time zone">Select time zone</option>
+                    </select>
+                </div>
+                <hr>
+                <p class="heading">Enter a wesite link(optional)</p>
+                <div class="street-addr2">
+                    <label>Website Link</label><br>
+                    <input id="street-addr2" placeholder="Enter URL" type="text">
+                </div>
+                <hr>
+                <p class="heading">Choose a pre-set color(optional)</p>
+                <label>Assigning colors to your clients can help to visally group them together or quickly distinguish
+                    them from one another</label><br><br>
+                <div class="preset-color">
+                    <label>Pre-Set Colors</label><br><br>
+                    <div id="color">
+                        <img id="color1" src="darkblue.png"></img>
+                        <img id="color2" src="skyblue.png"></img>
+                        <img id="color2" src="green.jpg"></img>
+                        <img id="color2" src="orange.png"></img>
+                        <img id="color2" src="yellow.jpg"></img>
+                        <img id="color2" src="brown.png"></img>
+                        <img id="color2" src="pink.png"></img>
+                        <img id="color2" src="violet.png"></img>
+                        <img id="color2" src="purple.png"></img>
+                        <img id="color2" src="black.png"></img>
+                        <img id="color2" src="gray.jpg"></img>
+                    </div>
+                </div>
+                <hr>
+                <p class="heading">Enter notes(optional)</p>
+                <label>Notes</label><br>
+                <textarea rows="5" cols="60" name="text" id="notes"
+                    placeholder="Enter any comments or notes"></textarea>
+                <hr>
+                <p class="heading">Enter additional information by creating your own on fields for client
+                    accounts(optional)</p>
+                <label>Custom User Field</label><br>
+                <input id="street-addr2" type="text"><br><br><br>
+                <hr>
+                <div class="bottom-button">
+                    <div class="bottom-left">
+                    </div>
+                    <div class="bottom-right">
+                        <a href="#" id="clear">Clear Page</a>
+                        <input id="next" type="button" value="Next &nbsp;&#xf061" />
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>
