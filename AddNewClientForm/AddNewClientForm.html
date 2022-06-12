@@ -68,11 +68,11 @@
 					<div class="client-info1">
 						<div class="name">
 							<label>Client Name<span>*<span></label><br>
-							<input id="name-in" type="text">
+							<input id="name-in" placeholder="Enter client name" type="text">
 						</div>
 						<div class="business">
 							<label>Doing Business As</label><br>
-							<input id="business-in" type="text">
+							<input id="business-in" placeholder="Enter DBA or fictitious name" type="text">
 						</div>
 					</div>
 					<hr>
@@ -80,15 +80,17 @@
 					<div class="client-info2">
 						<div class="client-id">
 							<label>Client ID(Limit of 10 characters)<span>*<span></label><br>
-							<input id="client-id" type="text">
+							<input id="client-id" placeholder="Enter client ID" type="text">
 						</div>
 						<div class="fein">
 							<label>FEIN</label><br>
-							<input id="fein" type="text">
+							<input id="fein" placeholder="Enter FEIN &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&#xf070;" type="text">
 						</div>
 						<div class="client-type">
 							<label>Client Type<span>*<span></label><br>
-							<input id="client-type" type="text">
+							<select name="type" id="client-type">
+								<option value="client-set-code">Select client type</option>
+							</select>
 						</div>
 					</div>
 					<hr>
@@ -105,39 +107,41 @@
 						</div>
 					</div>
 					<hr>
-					<p class="heading">Enter Address(optional).More addresses can be saved as additional contacts</p>
+					<p class="heading">Enter Address(optional). More addresses can be saved as additional contacts</p>
 					<div class="client-info4">
 						<div class="attention">
 							<label>Attention</label><br>
-							<input id="attention" type="text">
+							<input id="attention" placeholder="Enter address" type="text">
 						</div><br>
 						<div class="street-addr1">
 							<label>Street Address</label><br>
-							<input id="street-addr1" type="text">
+							<input id="street-addr1" placeholder="Enter street address" type="text">
 						</div><br>
 						<div class="street-addr2">
 							<label>Street Address</label><br>
-							<input id="street-addr2" type="text">
+							<input id="street-addr2" placeholder="Enter apartment,suit,unit,floor,building,etc." type="text">
 						</div><br>
 					</div>
 					<div class="client-info5">
 						<div class="name">
 							<label>Zip Code/Postal Code<span>*<span></label><br>
-							<input id="name-in" type="text">
+							<input id="name-in" placeholder="00000" type="text">
 						</div><br>
 						<div class="business">
 							<label>City</label><br>
-							<input id="business-in" type="text">
+							<input id="business-in" placeholder="Enter city" type="text">
 						</div>
 					</div><br>
 					<div class="client-info5">
 						<div class="name">
 							<label>State/Province<span>*<span></label><br>
-							<input id="name-in" type="text">
+							<input id="name-in" placeholder="Enter state/province" type="text">
 						</div>
 						<div class="business">
 							<label>Country</label><br>
-							<input id="business-in" type="text">
+							<select name="type" id="business-in">
+								<option value="country">Select country</option>
+							</select>
 						</div>
 					</div><br>
 					<div class="client-info3">
@@ -157,7 +161,48 @@
 							<option value="time zone">Select time zone</option>
 						</select>
 					</div>
-				</div>
+					<hr>
+					<p class="heading">Enter a wesite link(optional)</p>
+					<div class="street-addr2">
+						<label>Website Link</label><br>
+						<input id="street-addr2" placeholder="Enter URL" type="text">
+					</div>
+					<hr>
+					<p class="heading">Choose a pre-set color(optional)</p>
+					<label>Assigning colors to your clients can help to visally group them together or quickly distinguish them from one another</label><br><br>
+					<div class="preset-color">
+						<label>Pre-Set Colors</label><br><br>
+						<div id="color">
+							<img id="color1" src="darkblue.png"></img>
+							<img id="color2" src="skyblue.png"></img>
+							<img id="color2" src="green.jpg"></img>
+							<img id="color2" src="orange.png"></img>
+							<img id="color2" src="yellow.jpg"></img>
+							<img id="color2" src="brown.png"></img>
+							<img id="color2" src="pink.png"></img>
+							<img id="color2" src="violet.png"></img>
+							<img id="color2" src="purple.png"></img>
+							<img id="color2" src="black.png"></img>
+							<img id="color2" src="gray.jpg"></img>
+						</div>
+					</div>
+					<hr>
+					<p class="heading">Enter notes(optional)</p>
+					<label>Notes</label><br>
+					<textarea rows="5" cols="60" name="text" id="notes" placeholder="Enter any comments or notes"></textarea>
+					<hr>
+					<p class="heading">Enter additional information by creating your own on fields for client accounts(optional)</p>
+					<label>Custom User Field</label><br>
+					<input id="street-addr2" type="text"><br><br><br>
+					<hr>	
+					<div class="bottom-button">
+						<div class="bottom-left">
+						</div>
+						<div class="bottom-right">
+							<a href="#" id="clear">Clear Page</a>
+							<input id="next" type="button" value="Next &nbsp;&#xf061"/>
+						</div>
+					</div>
 			</div>
 		</div>
 	</body>

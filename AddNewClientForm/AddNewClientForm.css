@@ -56,12 +56,10 @@ body{
 	display:flex;
 }
 .left{
-	border:2px solid black;
 	height:100vh;
 	width:30%;
 }
 .right{
-	border:2px solid black;
 	width:70%;
 }
 #style-radio{
@@ -69,7 +67,6 @@ body{
 	font-size:20px;
 }
 .inner-division{
-	border:2px solid black;
 	margin-left:50px;
 	margin-right:50px;
 }
@@ -83,18 +80,18 @@ body{
 span{
 	color:red;
 }
-.client-info1,.client-info2,.client-info3,.client-info5{
+.client-info1,.client-info2,.client-info3,.client-info5,.bottom-button{
 	display:flex;
 }
 .client-info3{
 	width:95%;
+	border-radius:10px;
 }
 .business{
 	margin-left:20px;
 }
 .name,.business{
 	width:50%;
-	border:2px solid black;
 }
 #name-in{
 	height:30px;
@@ -115,11 +112,9 @@ span{
 	border:0;
 }
 .client-id{
-	border:2px solid black;
 	width:31.5%;
 }
 .fein,.client-type{
-	border:2px solid black;
 	width:31.8%;
 	margin-left:10px;
 }
@@ -133,12 +128,12 @@ span{
 	border:0;
 }
 .client-set-code{
-	border:2px solid black;
 	width:70%;
 	height:60px;
 }
 #code{
 	border-radius:6px;
+	border:0;
 	width:100%;
 	height:35px;
 }
@@ -147,12 +142,12 @@ span{
 	padding:10px;
 }
 .manage-codes{
-	border:2px solid black;
 	margin-left:10px;
 	width:20%;
 }
 #manage-codes{
 	border-radius:12px;
+	border:0;
 	margin-top:16px;
 	width:95%;
 	background-color:white;
@@ -162,21 +157,70 @@ span{
 	font-family:fontawesome;
 }
 #attention,#street-addr1,#street-addr2{
-	border:2px solid black;
 	height:30px;
 	width:96%;
 	background-color:#D7D8D4;
 	border-radius:12px;
 	font-size:18px;
+	border:0;
 }
 .time-zone{
-	border:2px solid black;
 	height:60px;
 	width:97%;
 }
 #time-zone{
 	border-radius:6px;
+	border:0;
 	width:100%;
 	height:35px;
 	background-color:#D7D8D4;
+}
+.preset-color{
+	background-color:#D7D8D4;
+	padding:10px;
+	width:95%;
+	border-radius:10px;
+}
+#color1{
+	width:15px;
+	height:15px;
+	border-radius:5px;
+}
+#color2{
+	width:15px;
+	height:15px;
+	margin-left:10px;
+	border-radius:5px;
+}
+#color{
+	display:flex;
+	flex-wrap:wrap;
+}
+#notes{
+	height:70px;
+	width: 97%;
+	background-color:#D7D8D4;
+	border-radius:10px;
+	border:0;
+}
+.bottom-left{
+	width:70%;
+}
+.bottom-right{
+	width:30%;
+}
+#clear{
+	margin-left:20%;
+}
+#next{
+	height:40px;
+	width:80px;
+	margin-left:20px;
+	background-color:#A3D63C;
+	color:black;
+	border-radius:10px;
+	border:0;
+	font-weight:bold;
+	font-size:16px;
+	font-family:fontawesome;
 }
