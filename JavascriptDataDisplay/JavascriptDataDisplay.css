@@ -1,16 +1,7 @@
 .container{
 	display:flex;
 }
-.left{
-	border:2px solid black;
-	width:100%;
-	height:100vh;
-}
-.right{
-	border:2px solid black;
-	width:100%;
-	height:100vh;
-}
+
 #heading{
 	margin-top:150px;
 	text-align:center;
