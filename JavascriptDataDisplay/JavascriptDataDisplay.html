@@ -39,21 +39,21 @@
 					</select>
 					<select name="state" id="state">
 						<option value="state">State</option>
-						<option value="state">Maharashtra</option>
+						<option value="Maharashtra">Maharashtra</option>
 						<option value="state">Gujrat</option>
-						<option value="state">Hokkaido</option>
-						<option value="state">Tohoku</option>						
+						<option value="Gujrat">Hokkaido</option>
+						<option value="Tohoku">Tohoku</option>						
 					</select>
 					<select name="city" id="city">
 						<option value="city">City</option>
-						<option value="city">Mumbai</option>
-						<option value="city">Pune</option>
-						<option value="city">Ahmedabad</option>
-						<option value="state">Surat</option>
-						<option value="state">Kushiro</option>
-						<option value="state">Abashiri</option>
-						<option value="city">Sendai</option>	
-						<option value="city">Akita</option>	
+						<option value="Mumbai">Mumbai</option>
+						<option value="Pune">Pune</option>
+						<option value="Ahmedabad">Ahmedabad</option>
+						<option value="Surat">Surat</option>
+						<option value="Kushiro">Kushiro</option>
+						<option value="Abashiri">Abashiri</option>
+						<option value="Sendai">Sendai</option>	
+						<option value="Akita">Akita</option>	
 					</select><br><br>
 					<div>
 						<input id="show" name="button" type="button" value="Add Data" onclick="show()"><br>
@@ -64,7 +64,10 @@
 		<script>
 			let list1 = [];
 			let list2 = [];
-			let list3 = [];			
+			let list3 = [];
+			let list4 = [];
+			let list5 = [];
+			let list6 = [];
 			let n = 1;
 			let x = 0;			
 			function show(){
@@ -73,12 +76,21 @@
 				list1[x] = document.getElementById("fname-in").value;
 				list2[x] = document.getElementById("lname-in").value;
 				list3[x] = document.getElementById("email-in").value;
+				list4[x] = document.getElementById("country").value;
+				list5[x] = document.getElementById("state").value;
+				list6[x] = document.getElementById("city").value;
 				let cell1 = newrow.insertCell(0);
 				let cell2 = newrow.insertCell(1);
 				let cell3 = newrow.insertCell(2);
+				let cell4 = newrow.insertCell(3);
+				let cell5 = newrow.insertCell(4);
+				let cell6 = newrow.insertCell(5);
 				cell1.innerHTML = list1[x];
 				cell2.innerHTML = list2[x];
 				cell3.innerHTML = list3[x];
+				cell4.innerHTML = list4[x];
+				cell5.innerHTML = list5[x];
+				cell6.innerHTML = list6[x];
 				n++;
 				x++;
 			}
