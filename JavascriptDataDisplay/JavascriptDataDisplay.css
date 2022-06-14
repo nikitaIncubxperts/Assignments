@@ -27,7 +27,7 @@ table,th,td{
 	text-align:center;
 	color:#201730;
 }
-#user-in{
+#fname-in,#lname-in,#email-in{
 	height:40px;
 	width:65%;
 	background-color:#D7D8D4;

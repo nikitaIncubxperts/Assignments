@@ -6,7 +6,7 @@
 	<body>
 		<div class="container">
 			<div class="left">
-				<table>
+				<table id="data">
 					<tr>						
 						<th>First Name</td>
 						<th>Last Name</td>
@@ -21,16 +21,16 @@
 				<h1 id="heading">Form</h1>
 					<div class="form">
 					<div>
-						<label id="user">First Name</label><br>
-						<input id="user-in" type="text" placeholder="Enter first name"><br><br>
+						<label id="fname">First Name</label><br>
+						<input name="fname" id="fname-in" type="text" placeholder="Enter first name"><br><br>
 					</div>
 					<div>
-						<label id="user">Last Name</label><br>
-						<input id="user-in" type="text" placeholder="Enter last name"><br><br>
+						<label id="lname">Last Name</label><br>
+						<input name="lname" id="lname-in" type="text" placeholder="Enter last name"><br><br>
 					</div>
 					<div>
-						<label id="user">Email</label><br>
-						<input id="user-in" type="email" placeholder="Enter email"><br><br>
+						<label id="email">Email</label><br>
+						<input name="email" id="email-in" type="email" placeholder="Enter email"><br><br>
 					</div>
 					<select name="country" id="country">
 						<option value="country">Country</option>
@@ -56,14 +56,32 @@
 						<option value="city">Akita</option>	
 					</select><br><br>
 					<div>
-						<input id="show" type="button" value="Add Data"><br>
+						<input id="show" name="button" type="button" value="Add Data" onclick="show()"><br>
 					</div>
 				</div>
 			</div>
-		</div>
-		
+		</div>		
 		<script>
-			
+			let list1 = [];
+			let list2 = [];
+			let list3 = [];			
+			let n = 1;
+			let x = 0;			
+			function show(){
+				let addrow = document.getElementById('data');
+				let newrow = addrow.insertRow(n);
+				list1[x] = document.getElementById("fname-in").value;
+				list2[x] = document.getElementById("lname-in").value;
+				list3[x] = document.getElementById("email-in").value;
+				let cell1 = newrow.insertCell(0);
+				let cell2 = newrow.insertCell(1);
+				let cell3 = newrow.insertCell(2);
+				cell1.innerHTML = list1[x];
+				cell2.innerHTML = list2[x];
+				cell3.innerHTML = list3[x];
+				n++;
+				x++;
+			}
 		</script>
 	</body>
 </html>
