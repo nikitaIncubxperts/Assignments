@@ -1,0 +1,59 @@
+.container{
+	display:flex;
+}
+.left{
+	border:2px solid black;
+	width:50%;
+	height:100vh;
+}
+.right{
+	border:2px solid black;
+	width:50%;
+	height:100vh;
+}
+.form{
+	margin-left:25%;
+}
+table{
+	margin-left:25%;
+	margin-top:20%;
+}
+table,th,td{
+	border:1px solid black;
+	padding:5px;
+}
+#heading{
+	margin-top:150px;
+	text-align:center;
+	color:#201730;
+}
+#user-in{
+	height:40px;
+	width:65%;
+	background-color:#D7D8D4;
+	border-radius:12px;
+	font-family:fontawesome;
+	font-size:18px;	
+	border:0;
+}
+#country,#state,#city{ 
+	height:35px;
+	width:21%;
+	background-color:#D7D8D4;
+	color:black;
+	font-weight:bold;
+	border-radius:12px;
+	border:0;
+}
+#show{
+	margin-top:35px;
+	height:50px;
+	width:43%;
+	background-color:#D6F597;
+	color:white;
+	border-radius:12px;
+	color:black;
+	font-size:24px;
+	font-weight:bold;
+	border:0;
+}
