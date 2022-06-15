@@ -2,10 +2,10 @@
 <html>
 	<head>
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-		<link rel="stylesheet" href="bootstrap_design_layout.css"></link>
+		
 		<link rel="stylesheet" href="JavascriptDataDisplay.css" ></link>
 	</head>
-	<body>
+	<body onload="defaultdata();">
 		<div class="container-fluid">
 			<div class=row>
 				<div class="col-lg-6">
@@ -13,6 +13,7 @@
 						<tr>						
 							<th>First Name</td>
 							<th>Last Name</td>
+							<th>Age</td>
 							<th>Email</td>
 							<th>Country</td>
 							<th>State</td>
@@ -22,61 +23,171 @@
 				</div>
 				<div class="col-lg-6">				
 					<h1 id="heading">Form</h1>
-						<div class="form">
-						<div>
-							<label id="fname">First Name</label><br>
-							<input name="fname" id="fname-in" type="text" placeholder="Enter first name"><br><br>
-						</div>
-						<div>
-							<label id="lname">Last Name</label><br>
-							<input name="lname" id="lname-in" type="text" placeholder="Enter last name"><br><br>
-						</div>
-						<div>
-							<label id="email">Email</label><br>
-							<input name="email" id="email-in" type="email" placeholder="Enter email"><br><br>
-						</div>
-						<label>Country</label>
-						<select name="country" id="country" onchange="stateupdate()">
-							<option id="country1" value="country1">Select Country</option>
-							<option id="india" value="india">India</option>
-							<option id="japan" value="japan">Japan</option>
-						</select>
-						<label>State</label>
-						<select name="state" id="state" onclick="cityupdate()">						
-							<option id="maharashtra" value="maharashtra">Maharashtra</option>
-							<option id="gujrat" value="gujrat">Gujrat</option>
-							<option id="hokkaido" value="hokkaido">Hokkaido</option>
-							<option id="tohoku" value="tohoku">Tohoku</option>						
-						</select>
-						<label>City</label>
-						<select name="city" id="city">
-							<option id="city1" value="city1">City</option>
-							<option id="mumbai" value="mumbai">Mumbai</option>
-							<option id="pune" value="pune">Pune</option>
-							<option id="ahmadabad" value="ahmadabad">Ahmedabad</option>
-							<option id="surat" value="surat">Surat</option>
-							<option id="kushiro" value="kushiro">Kushiro</option>
-							<option id="abashiri" value="abashiri">Abashiri</option>
-							<option id="sendai" value="sendai">Sendai</option>	
-							<option id="akita" value="akita">Akita</option>	
-						</select><br><br>
-						<div>
-							<input id="show" name="button" type="button" value="Add Data" onclick="show()"><br>
-						</div>
+						<form name="dataform">
+							<div class="form">
+							<div>
+								<label id="fname">First Name</label><br>
+								<input name="fname" id="fname-in" type="text" placeholder="Enter first name"><br>
+								<span id="fname-err" class="text-danger font-weight-bold"></span><br>
+							</div>
+							<div>
+								<label id="lname">Last Name</label><br>
+								<input name="lname" id="lname-in" type="text" placeholder="Enter last name"><br>
+								<span id="lname-err" class="text-danger font-weight-bold"></span><br>
+							</div>
+							<div>
+								<label id="age">Age</label><br>
+								<input name="age" id="age-in" type="text" placeholder="Enter age"><br>
+								<span id="age-err" class="text-danger font-weight-bold"></span><br>
+							</div>
+							<div>
+								<label id="email">Email</label><br>
+								<input name="email" id="email-in" type="email" placeholder="Enter email"><br>
+								<span id="email-err" class="text-danger font-weight-bold"></span><br>
+							</div>
+							<label>Country</label>
+							<select name="country" id="country" onchange="stateupdate()">
+								<option id="country1" value=""></option>
+								<option id="india" value="india">India</option>
+								<option id="japan" value="japan">Japan</option>
+							</select><span id="country-err" class="text-danger font-weight-bold"></span><br><br>
+							<label>State</label>
+							<select name="state" id="state" onclick="cityupdate()">						
+								<option id="maharashtra" value="maharashtra">Maharashtra</option>
+								<option id="gujrat" value="gujrat">Gujrat</option>
+								<option id="hokkaido" value="hokkaido">Hokkaido</option>
+								<option id="tohoku" value="tohoku">Tohoku</option>						
+							</select><span id="state-err" class="text-danger font-weight-bold"></span><br><br>
+							<label>City</label>
+							<select name="city" id="city">
+								<option id="city1" value="city1">City</option>
+								<option id="mumbai" value="mumbai">Mumbai</option>
+								<option id="pune" value="pune">Pune</option>
+								<option id="ahmadabad" value="ahmadabad">Ahmedabad</option>
+								<option id="surat" value="surat">Surat</option>
+								<option id="kushiro" value="kushiro">Kushiro</option>
+								<option id="abashiri" value="abashiri">Abashiri</option>
+								<option id="sendai" value="sendai">Sendai</option>	
+								<option id="akita" value="akita">Akita</option>	
+							</select><span id="city-err" class="text-danger font-weight-bold"></span><br><br>
+							<div>
+								<input id="show" name="button" type="button" value="Add Data" onclick="showdata();"><br>
+							</div>
+						</form>
 					</div>
 				</div>
 			</div>
 		</div>		
 		<script>
+			function defaultdata(){
+				col1[0] = document.getElementById("fname-in");
+				col1[0].value = "meenal";
+				cell1.innerHTML = col1[x];
+			}
 			let col1 = [];
 			let col2 = [];
 			let col3 = [];
 			let col4 = [];
 			let col5 = [];
 			let col6 = [];
+			let col7 = [];
 			let n = 1;
 			let x = 0;		
-			function show(){
+			function showdata(){
+				let fname = document.forms["dataform"]["fname-in"].value;
+				let lname = document.forms["dataform"]["lname-in"].value;
+				let email = document.forms["dataform"]["email-in"].value;
+				let age = document.forms["dataform"]["age-in"].value;
+				let country = document.forms["dataform"]["country"].value;
+				let state = document.forms["dataform"]["state"].value;
+				let city = document.forms["dataform"]["city"].value;
+				if (fname == "" || fname == null) {
+					document.getElementById("fname-err").innerHTML = "Please fill first name";
+					return false;
+				}
+				else{
+					document.getElementById("fname-err").innerHTML = "";
+				}
+				if(!isNaN(fname)){
+					document.getElementById("fname-err").innerHTML = "Only characters are allowed";
+					return false;
+				}
+				else{
+					document.getElementById("fname-err").innerHTML = "";
+				}
+				if(fname.length<=2){
+					document.getElementById("fname-err").innerHTML = "Please fill atleast 2-characters";
+					return false;
+				}else{
+					document.getElementById("fname-err").innerHTML = "";
+				}				
+				if (lname == "" || lname == null) {
+					document.getElementById("lname-err").innerHTML = "Please fill last name";
+					return false;
+				}else{
+					document.getElementById("lname-err").innerHTML = "";
+				}
+				if(!isNaN(lname)){
+					document.getElementById("lname-err").innerHTML = "Only characters are allowed";
+					return false;
+				}else{
+					document.getElementById("lname-err").innerHTML = "";
+				}
+				if(lname.length<=1){
+					document.getElementById("lname-err").innerHTML = "Please fill atleast 2-characters";
+					return false;
+				}else{
+					document.getElementById("lname-err").innerHTML = "";
+				}
+				if (age == "" || age == null) {
+					document.getElementById("age-err").innerHTML = "Please fill age";
+					return false;
+				}else{
+					document.getElementById("age-err").innerHTML = "";
+				}				
+				if(isNaN(age)){
+					document.getElementById("age-err").innerHTML = "Only Numbers are allowed";
+					return false;
+				}else{
+					document.getElementById("age-err").innerHTML = "";
+				}
+				if (age <=18 || age >100) {
+					document.getElementById("age-err").innerHTML = "Please enter age between 18-100";
+					return false;
+				}else{
+					document.getElementById("age-err").innerHTML = "";
+				}
+				if (email == "" || email == null) {
+					document.getElementById("email-err").innerHTML = "Please fill email";
+					return false;
+				}else{
+					document.getElementById("email-err").innerHTML = "";
+				}
+				let emailformat = new RegExp('[a-z0-9]+@[a-z]+\.[a-z]{2,3}');
+				if(!email.match(emailformat)){
+					document.getElementById("email-err").innerHTML = "Please fill valid email address";
+					return false;
+				}else{
+					document.getElementById("email-err").innerHTML = "";
+				}
+				if (country == "" || country == null) {
+					document.getElementById("country-err").innerHTML = "select country";
+					return false;
+				}else{
+					document.getElementById("country-err").innerHTML = "";
+				}
+				if (state == "" || state == null) {
+					document.getElementById("state-err").innerHTML = "select state";
+					return false;
+				}else{
+					document.getElementById("state-err").innerHTML = "";
+				}
+				if (city == "" || city == null) {
+					document.getElementById("city-err").innerHTML = "select city";
+					return false;
+				}else{
+					document.getElementById("city-err").innerHTML = "";
+				}
 				let addrow = document.getElementById('data');
 				let newrow = addrow.insertRow(n);
 				let cell1 = newrow.insertCell(0);
@@ -85,18 +196,21 @@
 				let cell4 = newrow.insertCell(3);
 				let cell5 = newrow.insertCell(4);
 				let cell6 = newrow.insertCell(5);
+				let cell7 = newrow.insertCell(6);
 				col1[x] = document.getElementById("fname-in").value;
 				col2[x] = document.getElementById("lname-in").value;
-				col3[x] = document.getElementById("email-in").value;
-				col4[x] = document.getElementById("country").value;
-				col5[x] = document.getElementById("state").value;
-				col6[x] = document.getElementById("city").value;
+				col3[x] = document.getElementById("age-in").value;
+				col4[x] = document.getElementById("email-in").value;
+				col5[x] = document.getElementById("country").value;
+				col6[x] = document.getElementById("state").value;
+				col7[x] = document.getElementById("city").value;
 				cell1.innerHTML = col1[x];
 				cell2.innerHTML = col2[x];
 				cell3.innerHTML = col3[x];
 				cell4.innerHTML = col4[x];
 				cell5.innerHTML = col5[x];
 				cell6.innerHTML = col6[x];
+				cell7.innerHTML = col7[x];
 				n++;
 				x++;				
 			}
