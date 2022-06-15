@@ -236,7 +236,7 @@
 				}else{
 					document.getElementById("email-err").innerHTML = "";
 				}
-				let emailformat = new RegExp('[a-z0-9]+@[a-z]+\.[a-z]{2,3}');
+				let emailformat = /^[a-zA-Z0-9\.]+@+[a-zA-Z]+(\.)+[a-zA-Z]{2,3}$/;
 				if(!email.match(emailformat)){
 					document.getElementById("email-err").innerHTML = "Please fill valid email address";
 					return false;
